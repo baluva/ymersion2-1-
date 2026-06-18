@@ -19,8 +19,8 @@ func main() {
 	})
 
 	http.HandleFunc("/code/treatment", func(w http.ResponseWriter, r *http.Request) {
-		// Utilisez r.FormValue("input") pour récupérer la valeur du formulaire
-		input := r.FormValue("input")
+		// Le champ du formulaire (home.html) s'appelle "value"
+		input := r.FormValue("value")
 		result := decode(input)
 		fmt.Fprintf(w, "Résultat : %s", result)
 	})

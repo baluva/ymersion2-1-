@@ -1,0 +1,11 @@
+# Binaires Go
+*.exe
+*.exe~
+main
+ymersion2
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
